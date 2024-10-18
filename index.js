@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var book_1 = require("./book");
+var Member_1 = require("./Member");
+var book1 = new book_1.Book(1, '2020', 'abc book', 200, 3);
+var member1 = new Member_1.Member(1, 'hari', 'abc@gmail.com');
+console.log(book1.checkAvailability());
+book1.lendBook();
+console.log(book1.availableCopies);
+console.log(member1.getMemberInfo());
